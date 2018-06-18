@@ -5,7 +5,7 @@ services:
       context: ./dockerfiles
       dockerfile: dockerfile-6.2.4
     ports: 
-      - "9300:9300"
+      - "9200:9200"
     environment:
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
   elasticsearch-head:
@@ -17,4 +17,4 @@ services:
 #      context: ./dockerfiles
 #      dockerfile: dockerfile-2.4.5
 #    ports: 
-#      - "9301:9300"
+#      - "9201:9200"
